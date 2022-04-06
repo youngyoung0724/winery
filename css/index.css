@@ -1,0 +1,422 @@
+@charset "utf-8";
+
+/* slider */
+#carouselExampleSlidesOnly{
+    margin-top: -40px;
+    position: relative;
+    height: 100vh;
+}
+#carouselExampleSlidesOnly .carousel-inner .carousel-item img{
+    height: 100vh;
+}
+
+#carouselExampleSlidesOnly .txt{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 100%;
+    transition: color 0.5s;
+}
+#carouselExampleSlidesOnly .txt.active{
+    color: #6f5720;
+}
+#carouselExampleSlidesOnly .txt a img{
+    display: block;
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+}
+#carouselExampleSlidesOnly .txt a .scroll{
+    display: none;
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+#carouselExampleSlidesOnly .txt h1{
+    font-size: 70px;
+    font-weight:600;
+    padding: 20px 0;
+}
+#carouselExampleSlidesOnly .txt h2{
+    font-size: 22px;
+    font-weight: normal;
+    font-weight:400;
+    padding-bottom: 10px;
+}
+#carouselExampleSlidesOnly .txt h3{
+    font-size: 14px;
+    font-weight: normal;
+    font-weight:400;
+}
+
+/* cont1 - our */
+.row{
+    margin: 0;
+}
+.cont1 .dark{
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.4);
+    transition:   background-color 0.5s;
+}
+.cont1 .dark.active{
+    background-color:rgba(0, 0, 0, 0.2);
+}
+.row .ourstory{
+    background-image: url(../img/ourstory.jpg);
+    background-size: auto 130%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    transition: background-size 1s;
+}
+.ourstory .dark p{
+    text-align: center;
+    line-height: 570px;
+    color:#ffffff;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight:600;
+}
+.ourterrorirs{
+    background-image: url(../img/ourterrorirs.jpg);
+    background-size: auto 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    transition:background-position 1s;
+}
+.ourterrorirs .dark p{
+    text-align: center;
+    line-height: 570px;
+    color:#ffffff;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight:600;
+}
+
+/* cont2 - OUR WINES */
+.cont2{
+    height: 800px;
+    padding: 60px 0;
+}
+.cont2 .title{
+    font-size:55px;
+    color: #333;
+    text-align: center;
+    padding-bottom: 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.cont2 .wines{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.cont2 .wineboxs{
+    width: 170%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.cont2 .wines .wineboxs .box{
+    width: 25%;
+    text-align: center;
+}
+.cont2 .wines .wineboxs .box .img{
+    width: 100%;
+    height: 370px;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.cont2 .wines .wineboxs .box h2{
+    font-size: 20px;
+    color: #333;
+    font-weight:400;
+    padding: 10px 0;
+    text-transform:capitalize;
+}
+.cont2 .wines .wineboxs .box .price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont2 .wines .wineboxs .box .price h3{
+    font-size: 16px;
+    color: #333;
+    font-weight:400;
+    padding-bottom: 10px;
+}
+.cont2 .wines .wineboxs .box .price h3:first-child{
+    text-decoration:line-through;
+    color:#a0a2a5;
+    margin: 0 2px;
+}
+.cont2 .wines .wineboxs .box a{
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    background-color:#6f5720;
+    border-radius: 5px;
+}
+.cont2 .wines .wineboxs .box a:hover{
+    background-color: #000;
+}
+
+.cont2 .wines .prevs{
+    display: flex;
+    justify-content: space-between;
+}
+.cont2 .wines .prevs .ca{
+    width: 30px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.cont2 .wines .prevs .ca img{
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* cont3 - OUR EXPERIENCES */
+.cont3{
+    height: 570px;
+    background-image: url(../img/experiences.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: background-position 1s ;
+}
+.cont3 .dark{
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.4);
+    transition:   background-color 0.5s;
+    position: relative;
+}
+.cont3 .dark.active{
+    background-color:rgba(0, 0, 0, 0.2);
+}
+.cont3 .dark .experiences {
+    width: 670px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cont3 .dark .experiences h2{
+    font-size: 55px;
+    color: #ffff;
+    font-weight: 600;
+    text-transform:uppercase;
+    padding-bottom: 30px;
+}
+.cont3 .dark .experiences p{
+    font-size: 22px;
+    color: #fff;
+    padding-bottom: 30px;
+}
+.cont3 .dark .experiences a{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    width: 300px;
+    height: 50px;
+    background-color: #fff;
+    color: #333;
+    font-size: 18px;
+    text-transform:uppercase;
+    transition:background-color 0.5s, color 0.5s;
+    border-radius: 5px;
+}
+.cont3 .dark .experiences a:hover{
+    background-color:#6f5720;
+    color: #fff;
+}
+
+/* cont4 - wine content3 */
+.cont4{
+    height: 300px;
+    background-color: #faf;
+}
+.cont4 .row{
+    height: 100%;
+}
+
+.cont4 .row .col .box{
+    width: 100%;
+    height: 100%;
+    /* background-image: url(../img/content3-1.jpg); */
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.cont4 .row .col .box .dark{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.4);
+    transition: background-color 1s;
+}
+.cont4 .row .col .box .dark.active{
+    background-color:rgba(0, 0, 0, 0.2);
+}
+.cont4 .row .col .box .dark .txt{
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.cont4 .row .col .box .dark .txt h1{
+    font-size: 34px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.cont4 .row .col .box .dark .txt a{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 40px;
+    font-size: 12px;
+    text-align: center;
+    color: #333;
+    line-height: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: background-color 0.5s, color 0.5s;
+}
+.cont4 .row .col .box .dark .txt a:hover{
+    background-color:#6f5720;
+    color: #fff;
+}
+
+
+/* cont5 */
+.cont5{
+    height: auto;
+    padding: 60px 0;
+}
+.cont5 .row{
+    width: 100%;
+    height: 100%;
+}
+.cont5 .row .title{
+    font-size: 55px;
+    color: #333;
+    text-align: center;
+    padding-bottom: 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.cont5 .row .events{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.cont5 .row .events .winerys{
+    width: 160%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-wrap: nowrap;
+}
+.cont5 .row .events .winerys .box{
+    width: calc(100% / 4);
+    margin-right: 90px;
+}
+.cont5 .row .events .winerys .box .img{
+    width: 100%;
+    height: 190px;
+    background-size: auto 100%;
+    background-position: 50% 50%;
+    transition: background-size 0.5s;
+    background-image: url(../img/winery-1.jpg);
+}
+.cont5 .row .events .winerys .box .img:hover{
+    background-size: auto 110%;
+}
+.cont5 .row .events .winerys .box .img .dark{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.2);
+    display: none;
+}
+.cont5 .row .events .winerys .box .img:hover .dark{
+    display: block;
+}
+.cont5 .row .events .winerys .box .txt .eventTitle{
+    font-size: 22px;
+    color: #333;
+    text-align-last: left;
+    padding: 10px 0;
+}
+.cont5 .row .events .winerys .box .txt p{
+    font-size: 16px;
+    color: #797a7f;
+    padding-bottom: 10px;
+}
+.cont5 .row .events .winerys .box .txt a{
+    display: block;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: #fff;
+    background-color:#6f5720;
+    border-radius: 5px;
+    transition: background-color 0.5s, color 0.5s;
+}
+.cont5 .row .events .winerys .box .txt a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.cont5 .events .prevs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont5 .events .prevs .ca{
+    width: 30px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.cont5 .events .prevs .prev img{
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.cont5 .events .prevs .append img{
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
